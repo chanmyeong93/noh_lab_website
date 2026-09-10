@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site_title">Social Pharmacy & Pharmacoepidemiology Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand_name">노윤하 교수 Lab</span>
+          <span class="brand-affil" data-i18n="brand_affil">전남대학교 약학대학</span>
+        </span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+        <a href="research.html" data-i18n="nav_research">Research</a>
+        <a href="publications.html" data-i18n="nav_publications">Publications</a>
+        <a href="members.html" data-i18n="nav_members">Members</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 전면 3D 배경 배너 -->
+    <section class="hero" id="hero-bg">
+      <div class="container hero-inner">
+        <span class="tagline" data-i18n="hero_tagline">HEALTHCARE BIG DATA & REAL-WORLD EVIDENCE</span>
+        <h1 data-i18n="hero_title">사회약학 & 약물역학 연구실</h1>
+        <p class="subtitle" data-i18n="hero_sub">Real-World Data 기반 임상적 근거 창출 및 보건의료 정책 연구</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="research.html" data-i18n="hero_btn1">연구 분야</a>
+          <a class="btn btn-secondary" href="contact.html" data-i18n="hero_btn2">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 요약 통계 카드 -->
+    <div class="container">
+      <div class="stats-grid">
+        <div><div class="stat-num">50+</div><div class="stat-label" data-i18n="stat_1">출간 논문 수</div></div>
+        <div><div class="stat-num">10+</div><div class="stat-label" data-i18n="stat_2">진행 연구 과제</div></div>
+        <div><div class="stat-num">8</div><div class="stat-label" data-i18n="stat_3">구성원</div></div>
+      </div>
+    </div>
+
+    <!-- 1. 핵심 연구 분야 요약 -->
+    <section class="container section">
+      <h2 class="page-title" data-i18n="res_title">연구 분야 (Research)</h2>
+      <p class="section-desc" data-i18n="res_sub">빅데이터와 다학제적 접근법을 통한 보건의료 문제 해결</p>
+
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="card-icon">🧬</div>
+          <h3 data-i18n="res_c1_t">약물역학 및 RWD 빅데이터 분석</h3>
+          <p data-i18n="res_c1_d">전국민 보건의료 빅데이터를 분석하여 약물의 실마리정보 탐지, 안전성 및 효능 평가 연구를 수행합니다.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-icon">💊</div>
+          <h3 data-i18n="res_c2_t">사회약학 및 보건의료 정책</h3>
+          <p data-i18n="res_c2_d">의약품 접근성, DUE, 경제성 평가 및 의약품 규제 과학 정책을 정량적으로 평가하고 제언합니다.</p>
+        </div>
+        <div class="research-card">
+          <div class="card-icon">📊</div>
+          <h3 data-i18n="res_c3_t">AI 기반 임상 예측 모델링</h3>
+          <p data-i18n="res_c3_d">머신러닝 기법을 임상데이터에 적용하여 부작용 고위험군을 예측하고 맞춤형 정밀약학 모델을 개발합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 최근 출간 논문 미리보기 -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <span class="tagline" style="color:var(--primary-color);" data-i18n="home_pub_tag">Publications</span>
+            <h2 class="page-title" style="font-size:1.8rem; margin-top:6px;" data-i18n="home_pub_title">최근 출간 논문</h2>
+            <p class="section-desc" style="margin-bottom:0;" data-i18n="home_pub_sub">JAMA, Gut, Diabetes Care 등 저명 학술지에 게재된 최신 연구 성과입니다.</p>
+          </div>
+          <a class="see-all-link" href="publications.html" data-i18n="see_all">전체 보기 →</a>
+        </div>
+
+        <div class="preview-grid" style="margin-top:28px;">
+          <a class="pub-preview-card" href="https://doi.org/10.1001/jamanetworkopen.2026.30781" target="_blank" rel="noopener">
+            <span class="pub-year">2026</span>
+            <h4>Inhaled Corticosteroids Continuation in the First Trimester and Pregnancy Outcomes in Women With Asthma</h4>
+            <p>JAMA Network Open (IF 11.7)</p>
+          </a>
+          <a class="pub-preview-card" href="https://doi.org/10.2337/dc25-2577" target="_blank" rel="noopener">
+            <span class="pub-year">2026</span>
+            <h4>GLP-1 Receptor Agonists and Risk of Nonarteritic Anterior Ischemic Optic Neuropathy</h4>
+            <p>Diabetes Care (IF 22.6)</p>
+          </a>
+          <a class="pub-preview-card" href="https://doi.org/10.1136/gutjnl-2025-337345" target="_blank" rel="noopener">
+            <span class="pub-year">2025</span>
+            <h4>Proton pump inhibitors use and risk of inflammatory bowel disease in children</h4>
+            <p>Gut (IF 24.6)</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 연구실 구성원 미리보기 -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <span class="tagline" style="color:var(--primary-color);" data-i18n="home_member_tag">Members</span>
+            <h2 class="page-title" style="font-size:1.8rem; margin-top:6px;" data-i18n="home_member_title">연구실 구성원</h2>
+            <p class="section-desc" style="margin-bottom:0;" data-i18n="home_member_sub">함께 연구를 이끌어가는 대학원생 및 학부연구생을 소개합니다.</p>
+          </div>
+          <a class="see-all-link" href="members.html" data-i18n="see_all">전체 보기 →</a>
+        </div>
+
+        <!-- 2x2 Grid Layout 적용 -->
+        <!-- 2x2 Grid Layout 적용 -->
+        <div class="member-preview-grid" style="margin-top:28px;">
+          <!-- 노윤하 교수 -->
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper">
+              <img class="member-photo" src="images/professor.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="노윤하 교수" data-i18n-alt="mem_prof_name">
+            </div>
+            <div class="member-info">
+              <h4 data-i18n="mem_prof_name">노윤하 교수</h4>
+              <p class="role" data-i18n="mem_prof_role">Professor</p>
+            </div>
+          </div>
+
+          <!-- 민지우 -->
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper">
+              <img class="member-photo" src="images/student_mjw.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="민지우" data-i18n-alt="mem_s1_name">
+            </div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s1_name">민지우</h4>
+              <p class="role" data-i18n="mem_s1_role">Master's Course</p>
+            </div>
+          </div>
+
+          <!-- 김민정 -->
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper">
+              <img class="member-photo" src="images/student_kmj.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="김민정" data-i18n-alt="mem_s2_name">
+            </div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s2_name">김민정</h4>
+              <p class="role" data-i18n="mem_s2_role">Bachelor's Course</p>
+            </div>
+          </div>
+
+          <!-- 류은수 -->
+          <div class="member-preview-card">
+            <div class="member-photo-wrapper">
+              <img class="member-photo" src="images/student_les.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="류은수" data-i18n-alt="mem_s3_name">
+            </div>
+            <div class="member-info">
+              <h4 data-i18n="mem_s3_name">류은수</h4>
+              <p class="role" data-i18n="mem_s3_role">Bachelor's Course</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 최근 소식 미리보기 (JS 자동 연동 파트) -->
+    <section class="overview-section">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <span class="tagline" style="color:var(--primary-color);" data-i18n="home_news_tag">News</span>
+            <h2 class="page-title" style="font-size:1.8rem; margin-top:6px;" data-i18n="home_news_title">최근 소식</h2>
+            <p class="section-desc" style="margin-bottom:0;" data-i18n="home_news_sub">연구실의 학회 발표, 논문 게재, 수상 등의 소식을 확인하세요.</p>
+          </div>
+          <a class="see-all-link" href="news.html" data-i18n="see_all">전체 보기 →</a>
+        </div>
+
+        <div class="preview-grid" id="news-preview-container" style="margin-top:28px;"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/news-admin.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

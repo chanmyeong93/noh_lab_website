@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="res_site_title">Research - Noh Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- [헤더 및 네비게이션 영역] -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-name" data-i18n="site_brand_name">노윤하 교수 Lab</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="research.html" class="active" data-i18n="nav_research">Research</a>
+        <a href="publications.html" data-i18n="nav_publications">Publications</a>
+        <a href="members.html" data-i18n="nav_members">Members</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- [메인 컨텐츠 영역] -->
+  <main class="container section">
+    
+    <!-- 섹션 헤더 -->
+    <h1 class="page-title" data-i18n="res_diagram_title">Research Overview</h1>
+    <p class="section-desc" data-i18n="res_diagram_sub">
+      사회약학 및 약물역학 빅데이터 연구실은 Real-World Data(RWD) 기반의 고도화된 역학 연구 기법을 통해 의약품의 안전성과 유효성을 규명하고, 보건의료 정책 및 규제 의사결정에 필요한 임상적 근거(RWE)를 창출합니다.
+    </p>
+
+    <!-- [SVG 연구 주제 동적 인터랙티브 네트워크] -->
+    <div class="diagram-wrap" id="research-network">
+      <div class="diagram-caption">
+        <span class="network-live-dot"></span>
+        <span>RESEARCH NETWORK</span>
+      </div>
+
+      <svg class="research-network-svg" viewBox="0 0 900 560"
+           width="100%" height="100%" preserveAspectRatio="xMidYMid meet"
+           xmlns="http://www.w3.org/2000/svg"
+           aria-label="Noh Lab Research Network">
+
+        <defs>
+          <radialGradient id="network-bg" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#ffffff"/>
+            <stop offset="65%" stop-color="#f0fdf4"/>
+            <stop offset="100%" stop-color="#dcfce7"/>
+          </radialGradient>
+
+          <radialGradient id="core-grad" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#34d399"/>
+            <stop offset="45%" stop-color="#059669"/>
+            <stop offset="100%" stop-color="#064e3b"/>
+          </radialGradient>
+
+          <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10b981" stop-opacity=".12"/>
+            <stop offset="45%" stop-color="#059669" stop-opacity=".75"/>
+            <stop offset="100%" stop-color="#06b6d4" stop-opacity=".16"/>
+          </linearGradient>
+
+          <linearGradient id="line-grad-alt" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#06b6d4" stop-opacity=".12"/>
+            <stop offset="50%" stop-color="#10b981" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#059669" stop-opacity=".12"/>
+          </linearGradient>
+
+          <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+
+          <filter id="card-shadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10"
+                          flood-color="#047857" flood-opacity=".13"/>
+          </filter>
+
+          <filter id="core-glow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="8" result="glow"/>
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+
+          <pattern id="micro-grid" width="36" height="36" patternUnits="userSpaceOnUse">
+            <path d="M36 0H0V36" fill="none" stroke="#10b981" stroke-opacity=".08"/>
+            <circle cx="1" cy="1" r="1" fill="#059669" fill-opacity=".16"/>
+          </pattern>
+        </defs>
+
+        <!-- Ambient background -->
+        <rect x="0" y="0" width="900" height="560" rx="22" fill="url(#network-bg)"/>
+        <rect x="0" y="0" width="900" height="560" rx="22" fill="url(#micro-grid)"/>
+
+        <!-- Organic background particles -->
+        <g class="network-particles" aria-hidden="true">
+          <circle cx="82" cy="112" r="2.5"/>
+          <circle cx="154" cy="72" r="1.8"/>
+          <circle cx="756" cy="88" r="2.2"/>
+          <circle cx="822" cy="188" r="1.7"/>
+          <circle cx="78" cy="414" r="1.9"/>
+          <circle cx="178" cy="478" r="2.4"/>
+          <circle cx="734" cy="454" r="2.1"/>
+          <circle cx="828" cy="372" r="2.5"/>
+          <circle cx="454" cy="52" r="1.8"/>
+          <circle cx="438" cy="508" r="2"/>
+        </g>
+
+        <!-- Connections: irregular network rather than a rigid four-way diagram -->
+        <g class="network-links" fill="none" stroke-linecap="round">
+          <path class="network-link link-a" d="M177 139 C245 118, 284 176, 348 202 S455 221, 493 173"/>
+          <path class="network-link link-b" d="M493 173 C567 117, 642 139, 728 151"/>
+          <path class="network-link link-c" d="M728 151 C763 207, 705 235, 650 264 S559 288, 533 331"/>
+          <path class="network-link link-d" d="M533 331 C586 375, 660 397, 730 411"/>
+          <path class="network-link link-e" d="M730 411 C655 472, 574 449, 504 386"/>
+          <path class="network-link link-f" d="M504 386 C436 430, 365 433, 300 390"/>
+          <path class="network-link link-g" d="M300 390 C245 348, 221 300, 181 286"/>
+          <path class="network-link link-h" d="M181 286 C127 247, 132 185, 177 139"/>
+
+          <!-- cross-links -->
+          <path class="network-link network-link-soft" d="M177 139 C220 224, 267 271, 348 202"/>
+          <path class="network-link network-link-soft" d="M493 173 C476 237, 505 281, 533 331"/>
+          <path class="network-link network-link-soft" d="M181 286 C292 270, 393 293, 504 386"/>
+          <path class="network-link network-link-soft" d="M300 390 C381 331, 436 297, 533 331"/>
+          <path class="network-link network-link-soft" d="M348 202 C401 179, 451 202, 493 173"/>
+          <path class="network-link network-link-soft" d="M650 264 C590 235, 544 240, 493 282"/>
+        </g>
+
+        <!-- Moving signal particles -->
+        <g class="signal-layer" aria-hidden="true">
+          <circle class="signal signal-1" r="4"><animateMotion dur="9s" repeatCount="indefinite" path="M177 139 C245 118, 284 176, 348 202 S455 221, 493 173"/></circle>
+          <circle class="signal signal-2" r="3"><animateMotion dur="10.5s" repeatCount="indefinite" path="M728 151 C763 207, 705 235, 650 264 S559 288, 533 331"/></circle>
+          <circle class="signal signal-3" r="3.5"><animateMotion dur="11s" repeatCount="indefinite" path="M300 390 C381 331, 436 297, 533 331"/></circle>
+          <circle class="signal signal-4" r="3"><animateMotion dur="9.8s" repeatCount="indefinite" path="M181 286 C292 270, 393 293, 504 386"/></circle>
+        </g>
+
+        <!-- Central research core -->
+        <g class="network-core" data-node="core">
+          <circle class="core-halo core-halo-1" cx="450" cy="280" r="78"/>
+          <circle class="core-halo core-halo-2" cx="450" cy="280" r="62"/>
+          <circle class="core-orbit orbit-one" cx="450" cy="280" r="72"/>
+          <circle class="core-orbit orbit-two" cx="450" cy="280" r="86"/>
+          <circle class="core-node" cx="450" cy="280" r="48" filter="url(#core-glow)"/>
+          <circle class="core-highlight" cx="433" cy="262" r="11"/>
+          <text x="450" y="278" class="core-title">NOH LAB</text>
+          <text x="450" y="297" class="core-sub" data-i18n="core_sub" textLength="78" lengthAdjust="spacingAndGlyphs">RWD · RWE · CAUSAL</text>
+        </g>
+
+        <!-- Topic 01 -->
+        <a href="#topic-1" class="network-topic topic-01" data-topic="1">
+          <g class="topic-node">
+            <circle class="node-pulse" cx="172" cy="139" r="49"/>
+            <circle class="topic-orbit" cx="172" cy="139" r="41"/>
+            <g class="topic-card" filter="url(#card-shadow)">
+              <rect x="30" y="82" width="290" height="100" rx="20"/>
+              <circle class="topic-index" cx="67" cy="119" r="22"/>
+              <text class="index-text" x="67" y="124">01</text>
+              <text class="topic-title" x="100" y="112" data-i18n="topic1_short">약물역학 &amp; RWD/RWE</text>
+              <text class="topic-subtitle" x="100" y="129" data-i18n="topic1_subtitle">PHARMACOEPIDEMIOLOGY</text>
+              <line x1="54" y1="147" x2="295" y2="147" class="card-line"/>
+              <text x="54" y="163" class="topic-hint" data-i18n="topic1_hint">REAL-WORLD DATA</text>
+            </g>
+          </g>
+        </a>
+
+        <!-- Topic 02 -->
+        <a href="#topic-2" class="network-topic topic-02" data-topic="2">
+          <g class="topic-node">
+            <circle class="node-pulse" cx="738" cy="151" r="48"/>
+            <circle class="topic-orbit" cx="738" cy="151" r="40"/>
+            <g class="topic-card" filter="url(#card-shadow)">
+              <rect x="595" y="93" width="290" height="100" rx="20"/>
+              <circle class="topic-index" cx="632" cy="130" r="22"/>
+              <text class="index-text" x="632" y="135">02</text>
+              <text class="topic-title" x="665" y="123" data-i18n="topic2_short">약물감시 &amp; 신호탐지</text>
+              <text class="topic-subtitle" x="665" y="140" data-i18n="topic2_subtitle">PHARMACOVIGILANCE</text>
+              <line x1="619" y1="158" x2="860" y2="158" class="card-line"/>
+              <text x="619" y="174" class="topic-hint" data-i18n="topic2_hint">SAFETY SIGNALS</text>
+            </g>
+          </g>
+        </a>
+
+        <!-- Topic 03 -->
+        <a href="#topic-3" class="network-topic topic-03" data-topic="3">
+          <g class="topic-node">
+            <circle class="node-pulse" cx="166" cy="286" r="46"/>
+            <circle class="topic-orbit" cx="166" cy="286" r="39"/>
+            <g class="topic-card" filter="url(#card-shadow)">
+              <rect x="24" y="228" width="290" height="100" rx="20"/>
+              <circle class="topic-index" cx="61" cy="265" r="22"/>
+              <text class="index-text" x="61" y="270">03</text>
+              <text class="topic-title" x="94" y="258" data-i18n="topic3_short">주산기 · 소아 약물안전성</text>
+              <text class="topic-subtitle" x="94" y="275" data-i18n="topic3_subtitle">PERINATAL &amp; PEDIATRICS</text>
+              <line x1="51" y1="293" x2="290" y2="293" class="card-line"/>
+              <text x="51" y="309" class="topic-hint" data-i18n="topic3_hint">VULNERABLE POPULATIONS</text>
+            </g>
+          </g>
+        </a>
+
+        <!-- Topic 04 -->
+        <a href="#topic-4" class="network-topic topic-04" data-topic="4">
+          <g class="topic-node">
+            <circle class="node-pulse" cx="740" cy="411" r="49"/>
+            <circle class="topic-orbit" cx="740" cy="411" r="41"/>
+            <g class="topic-card" filter="url(#card-shadow)">
+              <rect x="597" y="353" width="290" height="100" rx="20"/>
+              <circle class="topic-index" cx="634" cy="390" r="22"/>
+              <text class="index-text" x="634" y="395">04</text>
+              <text class="topic-title" x="667" y="383" data-i18n="topic4_short">규제과학 &amp; 보건의료정책</text>
+              <text class="topic-subtitle" x="667" y="400" data-i18n="topic4_subtitle">REGULATORY &amp; POLICY</text>
+              <line x1="621" y1="418" x2="862" y2="418" class="card-line"/>
+              <text x="621" y="434" class="topic-hint" data-i18n="topic4_hint">EVIDENCE TO POLICY</text>
+            </g>
+          </g>
+        </a>
+
+        <!-- Peripheral micro nodes: molecular / neural-network feeling -->
+        <g class="micro-nodes" aria-hidden="true">
+          <circle cx="348" cy="202" r="7"/>
+          <circle cx="493" cy="173" r="6"/>
+          <circle cx="533" cy="331" r="7"/>
+          <circle cx="504" cy="386" r="5"/>
+          <circle cx="650" cy="264" r="5"/>
+          <circle cx="300" cy="390" r="6"/>
+          <circle cx="260" cy="219" r="4"/>
+          <circle cx="590" cy="235" r="4"/>
+        </g>
+
+      </svg>
+    </div>
+
+    <!-- [상세 설명 섹션 영역] -->
+    <div class="topic-details-container">
+
+      <!-- Topic 1 상세 설명 -->
+      <section id="topic-1" class="topic-detail">
+        <div class="topic-detail-head">
+          <span class="topic-badge-num">01</span>
+          <h3 data-i18n="topic1_full">약물역학 및 RWD/RWE (Pharmacoepidemiology & Real-World Evidence)</h3>
+        </div>
+        <p data-i18n="topic1_d">
+          국민건강보험공단(NHIS), 건강보험심사평가원(HIRA)의 전구민 청구데이터, 그리고 영국의 CPRD(Clinical Practice Research Datalink) 등 국내외 대규모 실사용 데이터(RWD)를 구축 및 연계하여 분석합니다. Target Trial Emulation 기법 등 정교한 방법론과 인과추론(Causal Inference) 분석을 적용하여, 시판 후 의약품의 장기적 유효성과 실제 임상 환경에서의 치료 효과를 다각도로 심층 평가합니다.
+        </p>
+        <div class="topic-keywords">
+          <span data-i18n="topic1_kw1">NHIS / HIRA 빅데이터</span>
+          <span data-i18n="topic1_kw2">UK CPRD</span>
+          <span data-i18n="topic1_kw3">Target Trial Emulation</span>
+          <span data-i18n="topic1_kw4">인과추론 (Causal Inference)</span>
+        </div>
+      </section>
+
+      <!-- Topic 2 상세 설명 -->
+      <section id="topic-2" class="topic-detail">
+        <div class="topic-detail-head">
+          <span class="topic-badge-num">02</span>
+          <h3 data-i18n="topic2_full">약물감시 및 안전성 신호 탐지 (Pharmacovigilance & Safety Signals)</h3>
+        </div>
+        <p data-i18n="topic2_d">
+          GLP-1 수용체 작용제, 양성자펌프억제제(PPI) 등 임상 현장에서 범용적으로 처방되는 주요 의약품의 잠재적·미알려진 이상반응(Adverse Drug Events)을 조기에 탐지합니다. 자발적 부작용 보고 데이터 및 의료 빅데이터 기반의 신호탐지(Signal Detection) 알고리즘을 활용해 의약품 사용과 부작용 간의 연관성을 규명하고, 시판 후 약물 안전성 관리를 체계화합니다.
+        </p>
+        <div class="topic-keywords">
+          <span data-i18n="topic2_kw1">GLP-1 RA / PPI</span>
+          <span data-i18n="topic2_kw2">이상반응 신호탐지</span>
+          <span data-i18n="topic2_kw3">자발적 부작용 보고 데이터</span>
+          <span data-i18n="topic2_kw4">약물 이상반응 평가</span>
+        </div>
+      </section>
+
+      <!-- Topic 3 상세 설명 -->
+      <section id="topic-3" class="topic-detail">
+        <div class="topic-detail-head">
+          <span class="topic-badge-num">03</span>
+          <h3 data-i18n="topic3_full">주산기 및 소아 약물 안전성 (Perinatal & Pediatric Pharmacoepidemiology)</h3>
+        </div>
+        <p data-i18n="topic3_d">
+          임상시험 대상에서 제외되기 쉬운 취약 계층인 임산부 및 소아·청소년을 대상으로 맞춤형 역학 연구를 수행합니다. 임신 중 흡입성 코르티코스테로이드(ICS) 등 천식 약물 노출이 임신 결과 및 출생아 안전성에 미치는 영향을 평가하며, 유전적·환경적 교란요인을 통제하기 위해 형제자매 대조 연구(Sibling-matched Analysis) 등 고도화된 역학 디자인을 적용하여 신뢰도 높은 안전성 근거를 구축합니다.
+        </p>
+        <div class="topic-keywords">
+          <span data-i18n="topic3_kw1">임신 중 의약품 안전성</span>
+          <span data-i18n="topic3_kw2">소아·청소년 약물역학</span>
+          <span data-i18n="topic3_kw3">Sibling-matched Design</span>
+          <span data-i18n="topic3_kw4">산모-태아 코호트</span>
+        </div>
+      </section>
+
+      <!-- Topic 4 상세 설명 -->
+      <section id="topic-4" class="topic-detail">
+        <div class="topic-detail-head">
+          <span class="topic-badge-num">04</span>
+          <h3 data-i18n="topic4_full">규제과학 및 보건의료 정책 (Regulatory Science & Healthcare Policy)</h3>
+        </div>
+        <p data-i18n="topic4_d">
+          식품의약품안전처 및 보건당국의 의약품 규제 의사결정과 의약품 보건 정책 수립에 정량적 과학적 근거를 제공합니다. 의약품 적정사용(DUE), 사용량-약가 연동제, 급여 기준 설정 등 의약품의 접근성 제고와 보건의료 재정 절감을 동시에 달성할 수 있는 합리적인 RWE(Real-World Evidence) 기반 규제과학 표준을 정립합니다.
+        </p>
+        <div class="topic-keywords">
+          <span data-i18n="topic4_kw1">의약품 규제과학</span>
+          <span data-i18n="topic4_kw2">보건의료 정책 및 평가</span>
+          <span data-i18n="topic4_kw3">의약품 적정사용 (DUE)</span>
+          <span data-i18n="topic4_kw4">RWE 기반 의사결정</span>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    (() => {
+      const network = document.getElementById('research-network');
+      const svg = network?.querySelector('.research-network-svg');
+      const core = network?.querySelector('.network-core');
+
+      if (!network || !svg || !core) return;
+
+      const topics = [...network.querySelectorAll('.network-topic')];
+      const links = [...network.querySelectorAll('.network-link')];
+
+      let raf = null;
+      let pointerX = 0;
+      let pointerY = 0;
+
+      const updateParallax = () => {
+        raf = null;
+        const rect = network.getBoundingClientRect();
+        const x = ((pointerX - rect.left) / rect.width - 0.5) * 2;
+        const y = ((pointerY - rect.top) / rect.height - 0.5) * 2;
+
+        /* 마우스 위치를 CSS 변수로 전달 → 배경의 빛 + 노드가 함께 반응 */
+        network.style.setProperty('--spot-x', `${((pointerX - rect.left) / rect.width) * 100}%`);
+        network.style.setProperty('--spot-y', `${((pointerY - rect.top) / rect.height) * 100}%`);
+
+        topics.forEach((topic, index) => {
+          /* 기존보다 움직임을 조금 더 크게 해서 마우스 반응을 확실하게 */
+          const depth = 7 + (index % 3) * 3;
+          topic.style.setProperty('--mx', `${x * depth}px`);
+          topic.style.setProperty('--my', `${y * depth}px`);
+        });
+
+        core.style.setProperty('--mx', `${x * 5}px`);
+        core.style.setProperty('--my', `${y * 5}px`);
+      };
+
+      network.addEventListener('pointermove', (event) => {
+        pointerX = event.clientX;
+        pointerY = event.clientY;
+        network.classList.add('mouse-active');
+        if (!raf) raf = requestAnimationFrame(updateParallax);
+      });
+
+      network.addEventListener('pointerleave', () => {
+        network.classList.remove('mouse-active');
+        topics.forEach(topic => {
+          topic.style.setProperty('--mx', '0px');
+          topic.style.setProperty('--my', '0px');
+        });
+        core.style.setProperty('--mx', '0px');
+        core.style.setProperty('--my', '0px');
+      });
+
+      /* 앵커 이동을 즉시 점프하지 않고 부드럽게 스크롤 */
+      topics.forEach(topic => {
+        topic.addEventListener('click', (event) => {
+          const targetId = topic.getAttribute('href');
+          const target = targetId ? document.querySelector(targetId) : null;
+          if (!target) return;
+
+          event.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', targetId);
+        });
+
+        topic.addEventListener('mouseenter', () => {
+          const selected = topic.dataset.topic;
+
+          network.classList.add('has-active-node');
+
+          topics.forEach(item => {
+            item.classList.toggle('is-dimmed', item !== topic);
+            item.classList.toggle('is-active', item === topic);
+          });
+
+          links.forEach((link, index) => {
+            link.classList.toggle('is-highlighted', (index + 1) % 4 === Number(selected));
+          });
+        });
+
+        topic.addEventListener('mouseleave', () => {
+          network.classList.remove('has-active-node');
+          topics.forEach(item => {
+            item.classList.remove('is-dimmed', 'is-active');
+          });
+          links.forEach(link => link.classList.remove('is-highlighted'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

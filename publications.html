@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="pub_site_title">Publications - Noh Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===================================================================
+       [헤더 및 네비게이션 영역]
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-name" data-i18n="site_brand_name">노윤하 교수 Lab</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="research.html" data-i18n="nav_research">Research</a>
+        <a href="publications.html" class="active" data-i18n="nav_publications">Publications</a>
+        <a href="members.html" data-i18n="nav_members">Members</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       [메인 컨텐츠 영역]
+       =================================================================== -->
+  <main class="container section">
+    <h1 class="page-title" data-i18n="pub_page_title">Publications</h1>
+    <p class="section-desc" data-i18n="pub_section_desc">주요 출간 논문 및 연구 성과 목록입니다.</p>
+
+    <!-- [주석] 논문 추가 시 아래 <li class="pub-item"> 블록 전체를 복사해서 붙여넣으세요 -->
+    <ul class="pub-list">
+      <li class="pub-item">
+        <span class="pub-year">2026</span>
+        <div class="pub-details">
+          <!-- target="_blank"로 클릭 시 새 탭에서 저널 사이트로 이동 -->
+          <a href="https://doi.org/10.1016/j.jclinepi.2026.01.001" target="_blank" rel="noopener noreferrer" class="pub-title">
+            Assessment of Cardiovascular Safety associated with Novel Antidiabetic Agents: A Nationwide Cohort Study 🔗
+          </a>
+          <p class="pub-authors"><strong>Noh YH</strong>, Kim S, Park B, et al.</p>
+          <p class="pub-journal">Journal of Clinical Epidemiology, 2026; 158: 102-111.</p>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>
