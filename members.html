@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="mem_site_title">Members - Noh Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ===================================================================
+       [헤더 및 네비게이션 영역]
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-name" data-i18n="site_brand_name">노윤하 교수 Lab</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="research.html" data-i18n="nav_research">Research</a>
+        <a href="publications.html" data-i18n="nav_publications">Publications</a>
+        <a href="members.html" class="active" data-i18n="nav_members">Members</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       [메인 컨텐츠 영역]
+       =================================================================== -->
+  <main class="container section">
+    <h1 class="page-title" data-i18n="mem_page_title">Members</h1>
+    <p class="section-desc" data-i18n="mem_page_sub">사회약학 및 약물역학 빅데이터 연구실 연구진 소개입니다.</p>
+
+    <!-- 1. 교수님 소개 파트 (Principal Investigator) -->
+    <section class="member-group">
+      <h2>Principal Investigator</h2>
+      <div class="pi-card">
+        <div class="pi-photo">
+          <img src="images/professor.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="노윤하 교수" data-i18n-alt="pi_name">
+        </div>
+        <div class="pi-info">
+          <div class="pi-header">
+            <h3 class="pi-name" data-i18n="pi_fullname">노윤하 교수 (Yunha Noh, PharmD, PhD)</h3>
+            <span class="pi-title" data-i18n="role_pi">전남대학교 약학대학 사회약학/약물역학 조교수</span>
+          </div>
+
+          <!-- 연락처 및 외부 프로필 링크 -->
+          <div class="pi-stats">
+            <div class="pi-stat-item"><strong>Email:</strong> noh.yh@jnu.ac.kr</div>
+            <div class="pi-stat-item">
+              <strong data-i18n="pi_profile_label">연구자 프로필:</strong>
+              <span class="profile-links">
+                <a href="https://scholar.google.com/citations?user=eHgq3aEAAAAJ&hl=ko" target="_blank" rel="noopener" class="profile-btn">
+                  Google Scholar ↗
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Yunha+Noh&sort=date" target="_blank" rel="noopener" class="profile-btn">
+                  PubMed ↗
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <!-- 경력 (Career) -->
+          <div class="pi-section-title" data-i18n="pi_career_title">경력 (Career)</div>
+          <ul class="pi-list">
+            <li><span class="pi-timeline-date">2025.03 – present</span> · Assistant Professor, College of Pharmacy, Chonnam National University, Gwangju, South Korea</li>
+            <li><span class="pi-timeline-date">2022.12 – 2024.09</span> · Postdoctoral Fellow, Department of Epidemiology, Biostatistics and Occupational Health, McGill University, Montreal, Canada</li>
+            <li><span class="pi-timeline-date">2022.03 – 2025.02</span> · Postdoctoral Fellow / Research Professor, School of Pharmacy, Sungkyunkwan University, Suwon, South Korea</li>
+          </ul>
+
+          <!-- 학력 (Education) -->
+          <div class="pi-section-title" data-i18n="pi_edu_title">학력 (Education)</div>
+          <ul class="pi-list">
+            <li><span class="pi-timeline-date">2018 – 2022</span> · School of Pharmacy, Sungkyunkwan University, Suwon, South Korea (PhD)</li>
+            <li><span class="pi-timeline-date">2012 – 2018</span> · School of Pharmacy, Sungkyunkwan University, Suwon, South Korea (PharmD)</li>
+          </ul>
+
+          <!-- 기타 경력 -->
+          <div class="pi-section-title" data-i18n="pi_etc_title">기타 경력</div>
+          <ul class="pi-list">
+            <li><span class="pi-timeline-date">2025 – present</span> · <span data-i18n="pi_etc_1">한국사회약학회 이사</span></li>
+            <li><span class="pi-timeline-date">2025 – 2026</span> · <span data-i18n="pi_etc_2">대한약물역학위해관리학회 편집간행위원</span></li>
+          </ul>
+
+          <!-- 대표 논문 (Selected Publications) -->
+          <div class="pi-section-title" data-i18n="pi_pub_title">대표 논문 (Selected Publications)</div>
+          <ul class="pi-list pi-selected-pubs">
+            <li>Suh B, et al. Inhaled Corticosteroids Continuation in the First Trimester and Pregnancy Outcomes in Women With Asthma. <em>JAMA Netw Open</em> (IF 11.7). 2026. <a href="https://doi.org/10.1001/jamanetworkopen.2026.30781" target="_blank" rel="noopener">↗</a></li>
+            <li><strong>Noh Y</strong>, et al. GLP-1 Receptor Agonists and Risk of Nonarteritic Anterior Ischemic Optic Neuropathy in Patients With Type 2 Diabetes. <em>Diabetes Care</em> (IF 22.6). 2026. <a href="https://doi.org/10.2337/dc25-2577" target="_blank" rel="noopener">↗</a></li>
+            <li><strong>Noh Y</strong>, et al. Proton pump inhibitors use and risk of inflammatory bowel disease in children. <em>Gut</em> (IF 24.6). 2025. <a href="https://doi.org/10.1136/gutjnl-2025-337345" target="_blank" rel="noopener">↗</a></li>
+            <li><strong>Noh Y</strong>, et al. GLP-1 RAs and Risk for Gastroesophageal Reflux Disease in Patients With T2D. <em>Ann Intern Med</em> (IF 17.2). 2025. <a href="https://doi.org/10.7326/ANNALS-24-03420" target="_blank" rel="noopener">↗</a></li>
+            <li><strong>Noh Y</strong>, et al. Prenatal and Infant Exposure to Acid-Suppressive Medications and Risk of Allergic Diseases in Children. <em>JAMA Pediatrics</em> (IF 17.1). 2023. <a href="https://doi.org/10.1001/jamapediatrics.2022.5193" target="_blank" rel="noopener">↗</a></li>
+          </ul>
+          <p style="margin-top:10px;"><a href="publications.html" class="see-all-link" data-i18n="see_all">전체 보기 →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 연구원 및 졸업생 파트 -->
+    <section class="member-group">
+      <h2>Researchers</h2>
+
+      <!-- [2-1] 박사 과정 -->
+      <div class="member-subgroup">
+        <h3 class="subgroup-title">Ph.D. Students</h3>
+        <div class="member-grid">
+          <!-- 추후 인원 추가 시 주석 해제하여 사용 -->
+        </div>
+      </div>
+
+      <!-- [2-2] 석사 과정 -->
+      <div class="member-subgroup">
+        <h3 class="subgroup-title">Master's Students</h3>
+        <div class="member-grid">
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_mjw.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="민지우" data-i18n-alt="mem_mjw_name">
+            </div>
+            <h4 data-i18n="mem_mjw_name">민지우</h4>
+            <p class="role" data-i18n="role_ms">석사과정 (M.S. Student)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- [2-3] 학부 연구생 (가나다순 정렬) -->
+      <div class="member-subgroup">
+        <h3 class="subgroup-title">Undergraduate Researchers</h3>
+        <div class="member-grid">
+          
+          <!-- 1. 김민정 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_kmj.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="김민정" data-i18n-alt="mem_kmj_name">
+            </div>
+            <h4 data-i18n="mem_kmj_name">김민정</h4>
+            <p class="role" data-i18n="role_ug_pharm">학부연구생 (BS Pharm)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 2. 류은수 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_les.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="류은수" data-i18n-alt="mem_res_name">
+            </div>
+            <h4 data-i18n="mem_les_name">류은수</h4>
+            <p class="role" data-i18n="role_ug_pharm">학부연구생 (BS Pharm)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 3. 이다민 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_ldm.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="이다민" data-i18n-alt="mem_ldm_name">
+            </div>
+            <h4 data-i18n="mem_ldm_name">이다민</h4>
+            <p class="role" data-i18n="role_ug_stat">학부연구생 (BS in Stat)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 4. 이지언 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_lje.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="이지언" data-i18n-alt="mem_lje_name">
+            </div>
+            <h4 data-i18n="mem_lje_name">이지언</h4>
+            <p class="role" data-i18n="role_ug_pharm">학부연구생 (BS Pharm)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 5. 이찬명 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_lcm.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="이찬명" data-i18n-alt="mem_lcm_name">
+            </div>
+            <h4 data-i18n="mem_lcm_name">이찬명</h4>
+            <p class="role" data-i18n="role_ug_stat">학부연구생 (BS in Stat)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 6. 임승현 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_lsh.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="임승현" data-i18n-alt="mem_lsh_name">
+            </div>
+            <h4 data-i18n="mem_lsh_name">임승현</h4>
+            <p class="role" data-i18n="role_ug_pharm">학부연구생 (BS Pharm)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+          <!-- 7. 전재원 -->
+          <div class="member-card">
+            <div class="member-photo">
+              <img src="images/student_jjw.jpg" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%23cbd5e1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'" alt="전재원" data-i18n-alt="mem_jjw_name">
+            </div>
+            <h4 data-i18n="mem_jjw_name">전재원</h4>
+            <p class="role" data-i18n="role_ug_pharm">학부연구생 (BS Pharm)</p>
+            <p class="desc" data-i18n="desc_add_info">설명 추가</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- [2-4] Alumni (졸업생) 파트 -->
+    <section class="member-group">
+      <h2>Alumni</h2>
+      <div class="member-grid">
+        <!-- 추후 졸업생 추가 시 주석 해제하여 사용 -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>

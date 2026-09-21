@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contact_site_title">Contact - Noh Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* 지도 레이아웃 및 프레임 미니멀화 */
+    .map-wrapper {
+      width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border-color, #e2e8f0);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      background: #f8fafc;
+    }
+
+    #map-frame {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      display: block;
+    }
+
+    /* 국내 지도 바로가기 버튼 그룹 */
+    .map-shortcut-bar {
+      display: flex;
+      gap: 10px;
+      padding: 12px;
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-color, #e2e8f0);
+    }
+
+    .map-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .map-btn.kakao {
+      background-color: #fee500;
+      color: #191919;
+    }
+
+    .map-btn.naver {
+      background-color: #03c75a;
+      color: #ffffff;
+    }
+
+    .map-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">N</span>
+        <span class="brand-name" data-i18n="site_brand_name">노윤하 교수 Lab</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="research.html" data-i18n="nav_research">Research</a>
+        <a href="publications.html" data-i18n="nav_publications">Publications</a>
+        <a href="members.html" data-i18n="nav_members">Members</a>
+        <a href="news.html" data-i18n="nav_news">News</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">Contact</a>
+        <button id="lang-toggle-btn" class="lang-btn">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title" data-i18n="contact_title">Location & Contact</h1>
+    <p class="section-desc" data-i18n="contact_sub">연구실 위치 및 연락처 정보입니다.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info-card">
+        <div class="info-item">
+          <h4 data-i18n="contact_office">연구실 위치</h4>
+          <p data-i18n="contact_addr">광주광역시 북구 용봉로 77 전남대학교 약학대학 2호관</p>
+        </div>
+        <div class="info-item">
+          <h4 data-i18n="contact_email">이메일 문의</h4>
+          <p>noh.yh@jnu.ac.kr</p>
+        </div>
+      </div>
+
+      <!-- 구글 맵 Embed 렌더링 영역 및 국내 지도 단축 버튼 -->
+      <div class="map-wrapper">
+        <iframe id="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.672522770289!2d126.9056251!3d35.1788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35682312b9d212ab%3A0x8e833fb3efb7ed6!2z7KCE64Ko64yA7ZWZ6rWQIOy_oO2OvOyAuelCme2ZlS3tlZkgMi2tmLjsp4A!5e0!3m2!1sko!2skr!4v1710000000000!5m2!1sko!2skr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="전남대학교 약학대학 2호관 지도">
+        </iframe>
+        
+        <div class="map-shortcut-bar">
+          <a href="https://map.kakao.com/link/map/전남대학교 약학대학 2호관,35.1788,126.9082" target="_blank" rel="noopener" class="map-btn kakao" data-i18n="map_kakao_btn">
+            Kakao Map 길찾기 ↗
+          </a>
+          <a href="https://map.naver.com/v5/search/전남대학교%20약학대학%202호관" target="_blank" rel="noopener" class="map-btn naver" data-i18n="map_naver_btn">
+            Naver Map 길찾기 ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>
